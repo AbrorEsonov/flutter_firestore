@@ -10,19 +10,17 @@ class SplashPage extends StatefulWidget {
 
 class _SplashPageState extends State<SplashPage> {
   _initTimer(){
-    Timer(Duration(seconds: 3),(){
-
+    Timer(Duration(seconds: 2),(){
         Navigator.pushReplacementNamed(context, HomePage.id);
     });
   }
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     _initTimer();
-
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
